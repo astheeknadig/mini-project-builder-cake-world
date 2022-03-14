@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    color: #fff;
+    font-family: 'Architects Daughter','Raleway', sans-serif;
+}
+#layer1, #layer2, #layer3, #layer4, #layer5{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#layer1{
+    width: 245px;
+    height:20%;
+    max-height:50px;
+    visibility: hidden;
+    
+}
+#layer2{
+    width: 200px;
+    height:20%;
+    max-height:50px;
+    left: 40px;
+    visibility: hidden;
+    
+}
+#layer3{
+    width: 160px;
+    height:20%;
+    max-height:50px;
+    left: 60px;
+    visibility: hidden;
+   
+}
+#layer4{
+    width: 120px;
+    height:20%;
+    max-height:50px;
+    left: 80px;
+    visibility: hidden;
+    
+}
+#layer5{
+    width: 80px;
+    height:20%;
+    max-height:50px;
+    left: 100px;
+    visibility: hidden;
+
+}
+#candles{
+    top: 20px;
+    max-height:50px;
+    left: 120px;
+    
+    visibility: hidden;
+}
+/* Fill your code*/
+.container{
+    background-color: rgb(88, 38, 38);
+    width: 100vw;
+    height: 100vh;
+}
+.main-board{
+    background-color: rgb(180, 66, 180);
+    width: 100vw;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.prices,.bill{
+    width: 300px;
+    height: 300px;
+    background: url("./assets/list_template.png");
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cake{
+    width:300px;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    text-align: center;
+    height: 10vh;
+    width: 100vw;
+}
+
+.name{
+    background:#000;
+    width:250px;
+    position: absolute;
+    top:10px;
+    left:calc(50vw - 125px);
+    border-radius: 50%;
+}
+.prices,.bill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+ul{
+    list-style: none;
+}
+.buttons{
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons>a{
+    background-color: rgb(180, 66, 180);
+    padding:.5rem 1rem;
+    border-radius: 10px;
+}
+.buttons>a:hover{
+    box-shadow: #fff 1px 1px 15px;
+}
+#buy{
+    background-color: lightgreen;
+    color: #333;
+    border-color: #333;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#total, #Chocolate_b, #Strawberry_b, #Butterscotch_b, #Vannila_b, #Redvelvet_b{
+    visibility: hidden;
+}
+#total{
+    font-size: 25px;
+}

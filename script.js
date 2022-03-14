@@ -38,7 +38,6 @@ function flavour(f) {
 
 
 function buy() {
-    console.log(res);
     document.getElementById('total').style.visibility = "visible";
     document.getElementById("total").innerHTML += (' ' + res); 
 

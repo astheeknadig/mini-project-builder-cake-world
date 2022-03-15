@@ -17,28 +17,30 @@ var clr = {
 var l = [];
 var res = 0;
 var c = 0
+var b = false;;
 
 function flavour(f) {
     var ele = document.getElementById(f);
-    if (!l.includes(f)){
+    if (!l.includes(f) && !b){
         l.push(f)
         res += flav[f]
         document.getElementById("layer"+(c+1)).style.visibility = "visible";
         document.getElementById("layer"+(c+1)).style.backgroundColor = clr[f];
         c++;
-
         document.getElementById(f+'_b').style.visibility = "visible";
-        }
+    }
 
-        if (c==5){
+    if (c==5){
             var can = document.getElementById("candles");
             can.style.visibility = "visible";
-            }
+        }
     }
 
 
 function buy() {
+    if(!b){
+    b = true;
     document.getElementById('total').style.visibility = "visible";
     document.getElementById("total").innerHTML += (' ' + res); 
-
+    }
 }
